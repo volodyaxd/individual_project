@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Время</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>Время в разных городах России</h1>
+    <table>
+        <tr>
+            <th>Город(а)</th>
+            <th>Время</th>
+        </tr>
+        <tr>
+            <td>
+            (МСК -1) Калининград
+            </td>
+            <td id="kaliningrad"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК) Москва
+            Санкт-Петербург
+            Ростов-на-Дону
+            Нижний Новгород
+            Казань
+            Волгоград
+            Воронеж
+            Саратов
+            Краснодар
+            Ярославль
+            Махачкала
+            Рязань
+            Пенза
+            Набережные Челны
+            Липецк
+            Тула
+            Киров
+            Чебоксары
+            Брянск
+            Курск
+            Иваново
+            Тверь
+            Ставрополь
+            Белгород
+            Архангельск
+            Владимир
+            Сочи
+            Смоленск
+            Калуга
+            Орловская
+            Волжский
+            Череповец
+            Владикавказ
+            Мурманск
+            Вологда
+            Саранск
+            Тамбов
+            Грозный
+            Кострома
+            Петрозаводск
+            Таганрог
+            Йошкар-Ола
+            Новороссийск
+            Дзержинск Нальчик Шахты Сыктывкар Нижнекамск Зеленоград Старый Оскол Новгород Великий Новгород Балашиха Химки Псков Энгельс Рыбинский Балаковская Северодвинск Армавир Подольск Королев Мытищи Люберцы Волгодонская Новочеркасск Электросталь Альметьевский Ковров Коломна Майкопский Пятигорск Одинцово Новомосковск Железнодорожного Хасавюрт Черкесск Кисловодск Серпухов Новочебоксарск Орехово-Зуево Камышин Дербент Невинномысск Муром Батайск Сергиев Посад Новошахтинск Щёлково Елец Арзамас Обнинск Жуковского Элиста Ногинск Ухтинский Великолукский Мичуринск Зеленодольск Выборг Ялта Ростов Великий Суздаль Кижи
+            </td>
+            <td id="moscow"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +1) Самара
+            Тольятти
+            Ижевск
+            Ульяновск
+            Каракуль
+            Сызрань
+            Димитровграде
+            Новокуйбышевск
+            Сарапул
+            Воткинск
+            Глазов
+            </td>
+            <td id="samara"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +2) Екатеринбург
+            Челябинск
+            Уфа
+            перманент
+            Тюмень
+            Оренбург
+            Магнитогорск
+            Нижний Тагил
+            Курган
+            Сургут
+            Стерлитамак
+            Нижневартовск
+            Орский
+            Златоусте
+            Каменск-Уральский
+            Березники
+            Салават
+            Миасский
+            Первоуральск
+            Нефтеюганск
+            Нефтекамск
+            Ноябрьск
+            Октябрьском
+            Новый Уренгой
+            Тобольске
+            Новотроицк
+            Соликамск
+            </td>
+            <td id="yekaterinburg"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +3) Омск
+            </td>
+            <td id="omsk"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +4) Новосибирск
+            Красноярск
+            Барнаул
+            Новокузнецк
+            Кемерово
+            Томск
+            Прокопьевск
+            Бийский
+            Норильск
+            Абакан
+            Рубцовск
+            Кызыл
+            Ачинск
+            Северск
+            Междуреченск
+            Ленинск-Кузнецкий
+            Киселевск
+            Канск
+            </td>
+            <td id="krasnoyarsk"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +5) Иркутск
+            Улан-Удэ
+            Братск
+            Ангарск
+            Усть-Илимск
+            Усолье-Сибирское
+            Благовещенск
+            </td>
+            <td id="irkutsk"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +6) Чита
+            Якутск
+            Забайкальск
+            </td>
+            <td id="yakutsk"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +7) Владивосток
+            Хабаровск
+            Комсомольск-на-Амуре
+            Находкинский
+            Уссурийск
+            Магадан
+            </td>
+            <td id="vladivostok"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +8) Сахалин
+            Южно-Сахалинск
+            </td>
+            <td id="magadan"></td>
+        </tr>
+        <tr>
+            <td>
+            (МСК +9) полуостров Камчатка
+            Петропавловск-Камчатский
+            Анадырь (город)
+            </td>
+            <td id="kamchatka"></td>
+        </tr>
+    </table>
+
+    <script>
+        function updateClocks() {
+            const kaliningradTime = new Date().toLocaleString("en-RU", {timeZone: "Europe/Kaliningrad", timeStyle: "medium"});
+            document.getElementById('kaliningrad').innerText = kaliningradTime;
+
+            const moscowTime = new Date().toLocaleString("en-RU", {timeZone: "Europe/Moscow", timeStyle: "medium"});
+            document.getElementById('moscow').innerText = moscowTime;
+
+            const samaraTime = new Date().toLocaleString("en-RU", {timeZone: "Europe/Samara", timeStyle: "medium"});
+            document.getElementById('samara').innerText = samaraTime;
+
+            const yekaterinburgTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Yekaterinburg", timeStyle: "medium"});
+            document.getElementById('yekaterinburg').innerText = yekaterinburgTime;
+
+            const omskTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Omsk", timeStyle: "medium"});
+            document.getElementById('omsk').innerText = omskTime;
+
+            const krasnoyarskTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Krasnoyarsk", timeStyle: "medium"});
+            document.getElementById('krasnoyarsk').innerText = krasnoyarskTime;
+
+            const irkutskTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Irkutsk", timeStyle: "medium"});
+            document.getElementById('irkutsk').innerText = irkutskTime;
+
+            const yakutskTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Yakutsk", timeStyle: "medium"});
+            document.getElementById('yakutsk').innerText = yakutskTime;
+
+            const vladivostokTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Vladivostok", timeStyle: "medium"});
+            document.getElementById('vladivostok').innerText = vladivostokTime;
+
+            const magadanTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Magadan", timeStyle: "medium"});
+            document.getElementById('magadan').innerText = magadanTime;
+
+            const kamchatkaTime = new Date().toLocaleString("en-RU", {timeZone: "Asia/Kamchatka", timeStyle: "medium"});
+            document.getElementById('kamchatka').innerText = kamchatkaTime;
+        }
+
+        setInterval(updateClocks, 1000);
+        updateClocks();
+    </script>
+</body>
+</html>
